@@ -1,20 +1,18 @@
 body {
 	overflow: hidden;
 	font-family: 'Ubuntu', sans-serif;
-	background: #fff;
-	color: #000;
+	background: #000;
+	color: #fff;
 }
 
 /* Main container styles*/
 .main-container{
-	height: calc(100vh - 50px);
-    overflow: hidden;
-    top: 50px;
-    position: relative;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .sidebar, .month-slider, .date-container {
-	height: calc(100vh - 75px);
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 }
@@ -26,20 +24,19 @@ body {
 	}
 
 .days-headings {
-	position: fixed;
-	width: 66.66666667%;
-	top: 50px;
+	position: absolute;
+	width: 100%;
 }
 
 	.days-headings .table>tbody>tr>th{
-		border-bottom: 3px solid #000;
+		border-bottom: 3px solid #238ea2;
 		height: 75px;
 	}
 
 .dates-content {
 	position: absolute;
-	height: calc(100vh - 200px);
-	top: 200px;
+	height: calc(100vh - 100px);
+	top: 125px;
 	overflow: auto;
 	width: 100%;
 }
@@ -95,23 +92,15 @@ body {
 		padding-right: 20%;
 	}
 
+/* dates content hover effect */
+/*.dates-content .table>tbody>tr>td:hover{
+	background: #ff5858;
+	color: #000;
+	transition: all .6s ease;
+}
 
+.dates-content .table>tbody>tr>td:hover ul {
+	color: #543030;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
